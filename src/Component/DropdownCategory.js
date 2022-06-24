@@ -2,18 +2,18 @@ import './DropDownCat.css';
 import { useState} from 'react';
 
 function DropdownCategory(prop) {
-   let [show, setShow] = useState("none");
+   /*let [show, setShow] = useState("none");*/
 
    function clickHandler(event) {
          
-         setShow(event.target.value);
-         prop.fun(show);
+        /* setShow(event.target.value);*/
+         prop.fun(event.target.value);
    }
    console.log("show: "+show);
    return (<>
       <div className='Listconatiner1'>
          <label id="head">Select a Category</label>
-         <select id="drop" onChange={clickHandler} value={show} ><option value="None" >None</option>
+         <select id="drop" onChange={clickHandler}  ><option value="None" >None</option>
             {
                prop.cat.map((val, index) => {
                   return <option key={index} value={val.strCategory} className="options" >{val.strCategory}</option>
