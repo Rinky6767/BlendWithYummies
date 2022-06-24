@@ -1,0 +1,19 @@
+#ItemCardsWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.face{
+    margin-left:"12px";
+    font-size:"2.0rem",
+}
+@media only screen and (max-width: 350px){
+    .nodis{
+      font-size: 1.2rem;
+    }
+    .face{
+        margin-left:"15px";
+        font-size:" 1.7rem",
+    }
+}

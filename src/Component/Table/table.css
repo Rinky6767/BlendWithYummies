@@ -1,0 +1,26 @@
+.wrapper{
+    width:50%;
+    border: 2px solid whitesmoke;
+    margin: auto;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 3px 2px 12px gainsboro;
+    margin-bottom: 20px;
+}
+.data {
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+    padding: 2px;
+  }
+.wrapper:hover{
+    box-shadow: 5px 5px 15px black;
+}
+.datawrapper{
+    font-size: 1.5rem;
+   text-align: center;
+}
+.head{
+    text-align: center;
+    font-size: 2.0rem;
+}

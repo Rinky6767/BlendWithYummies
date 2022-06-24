@@ -1,0 +1,61 @@
+.recipeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: url("/public/Images/bgh.jpg")no-repeat center center/cover;
+    
+}
+.heading{
+    text-align: center;
+    font-size: 2.0rem;
+}
+.pic{
+    width: 450px;
+    height: 450px;
+    border: 1px solid gainsboro;
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px gray;
+}
+.pic:hover{
+    box-shadow: 2px 2px 20px gray;
+}
+.instruction{
+    text-align: left;
+    margin: 12px;
+    font-size: 1.5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cook{
+    text-align: center;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 500px){
+    .instruction{
+        text-align: left;
+        margin: 12px;
+        font-size: 1.0rem;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .pic{
+        width: 450px;
+        height: 450px;
+        border: 1px solid gainsboro;
+        border-radius: 12px;
+        box-shadow: 2px 2px 10px gray;
+    }.pic{
+        width: 250px;
+        height: 250px;
+        border: 1px solid gainsboro;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px gray;
+    }
+    .heading{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+}

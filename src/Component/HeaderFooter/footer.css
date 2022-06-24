@@ -1,0 +1,9 @@
+.footWrapper{
+    padding: 0%;
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 12px gray;
+}

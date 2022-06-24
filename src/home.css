@@ -1,0 +1,7 @@
+#wrapper{
+    margin: 0px;
+    padding: 0px;
+  display: grid;
+  grid-template-rows: 1fr 6fr 5fr 4fr 1fr;
+  overflow: hidden;
+  }
