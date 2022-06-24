@@ -16,7 +16,7 @@ The recipe is very important 🍨. It keeps the flavor of the dish 🧫 consiste
 
  ## BlendWithYummies
  As you know how important Recipes are and a bit of history about it 🐝
- Let's Bake the World a better place 😄
+ Let's Bake the World a better place 🗺️
  Because Baking is love made edible ❤️ 
 
 
