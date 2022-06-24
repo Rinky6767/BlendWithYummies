@@ -16,7 +16,7 @@ function DropdownCategory(prop) {
          <select id="drop" onChange={clickHandler} value={show} onClick={clickHandler}><option value="None" >None</option>
             {
                prop.cat.map((val, index) => {
-                  return <option key={index} value={val.strCategory} className="options" onClick={clickHandler} onTouchEnd={clickHandler}>{val.strCategory}</option>
+                  return <option key={index} value={val.strCategory} className="options" >{val.strCategory}</option>
                })
             }
          </select>
