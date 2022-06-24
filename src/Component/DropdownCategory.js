@@ -2,7 +2,7 @@ import './DropDownCat.css';
 import { useState} from 'react';
 
 function DropdownCategory(prop) {
-   let [show, setShow] = useState("None");
+   let [show, setShow] = useState("none");
 
    function clickHandler(event) {
          
