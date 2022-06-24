@@ -13,7 +13,7 @@ function DropdownCategory(prop) {
    return (<>
       <div className='Listconatiner1'>
          <label id="head">Select a Category</label>
-         <select id="drop" onChange={clickHandler} value={show} onClick={clickHandler}><option value="None" >None</option>
+         <select id="drop" onChange={clickHandler} value={show} ><option value="None" >None</option>
             {
                prop.cat.map((val, index) => {
                   return <option key={index} value={val.strCategory} className="options" >{val.strCategory}</option>
