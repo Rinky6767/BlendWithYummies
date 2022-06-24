@@ -5,6 +5,7 @@ import {SiCoffeescript} from 'react-icons/si'
 import Table from './Table/Table.js';
 import Footer from './HeaderFooter/Footer.js';
 import Navbar from './HeaderFooter/Navbar.js';
+import PageNotFound from './Error/PageNotFoound.js';
 import './recipe.css'
 function Recipe() {
     let [data, setData] = useState([]);
@@ -51,7 +52,7 @@ function Recipe() {
                         </div>
                     </div>)
                 })
-            }</>) : (<>Page Not Found</>)
+            }</>) : (<PageNotFound />)
         }
         <Footer/>
     </>)

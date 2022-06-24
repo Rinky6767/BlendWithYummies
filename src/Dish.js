@@ -7,6 +7,7 @@ import {FaGrinHearts} from 'react-icons/fa';
 import {SiCoffeescript} from 'react-icons/si'
 import Footer from './Component/HeaderFooter/Footer';
 import Navbar from './Component/HeaderFooter/Navbar';
+import PageNotFound from './Component/Error/PageNotFoound';
 
 function Dish() {
     let [Dish, setDish] = useState([]);
@@ -20,10 +21,11 @@ function Dish() {
             return response.json();
         }).then((Dish) => {
             setDish(Dish.meals);
-        }).catch((error) => { console.log(error); })
+        }).catch((error) => {  })
         // eslint-disable-next-line 
     }, []);
-    if (Dish.length > 0) {
+    
+    if (Dish!==null && Dish.length >= 1) {
         for (let i = 1; i <= 20; i++) {
             if (Dish[0][`strIngredient${i}`] !== null || Dish[0][`strIngredient${i}`] !==undefined) {
                 ingredient.push(Dish[0][`strIngredient${i}`]);
@@ -40,7 +42,7 @@ function Dish() {
     }
     return (<><Navbar/>
         {
-            Dish.length > 0 ? (<>{
+            Dish!==null ? (<>{
                 Dish.map((val) => {
                     return (<div className='recipeContainer'>
                         <h1 className='heading'><FaGrinHearts style={{color:"blue",marginRight:"12px"}}/>{val.strMeal}<FaGrinHearts style={{color:"red",marginLeft:"12px"}}/></h1>
@@ -52,7 +54,7 @@ function Dish() {
                         </div>
                     </div>)
                 })
-            }</>) : (<>Page Not Found</>)
+            }</>) : (<PageNotFound/>)
         }
         <Footer/>
     </>)
