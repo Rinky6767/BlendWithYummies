@@ -9,7 +9,7 @@ function DropdownCategory(prop) {
         /* setShow(event.target.value);*/
          prop.fun(event.target.value);
    }
-   console.log("show: "+show);
+   
    return (<>
       <div className='Listconatiner1'>
          <label id="head">Select a Category</label>
