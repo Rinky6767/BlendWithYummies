@@ -1,15 +1,9 @@
 import './DropDownCat.css';
-/*import { useState} from 'react';*/
 
 function DropdownCategory(prop) {
-   /*let [show, setShow] = useState("none");*/
-
    function clickHandler(event) {
-         
-        /* setShow(event.target.value);*/
          prop.fun(event.target.value);
    }
-   
    return (<>
       <div className='Listconatiner1'>
          <label id="head">Select a Category</label>
