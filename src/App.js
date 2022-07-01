@@ -1,17 +1,20 @@
 import './App.css';
-import {Switch,Route}from 'react-router-dom'
+import {Route, Routes}from 'react-router-dom'
 import Home from './Home'
 import Recipe from './Component/Recipe';
 import Dish from './Dish';
 function App() {
   return (
     <div className="App">
-     <Switch>
-      <Route path="/" component={Home} exact></Route>
-       <Route path="/recipe/:id" component={Recipe}></Route>
-       <Route path="/dish/:name" component={Dish}></Route> 
-     </Switch>
+      <Routes>
+      <Route path="/" element={<Home/>} exact></Route>
+       <Route path="/recipe/:id" element={<Recipe/>}></Route>
+       <Route path="/dish/:name" element={<Dish/>}></Route>
+      </Routes>
     </div>
   );
 }
 export default App;
+
+
+
