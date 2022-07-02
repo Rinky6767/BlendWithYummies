@@ -5,6 +5,7 @@ import ItemCard from './ItemCard';
 import {NameContext} from "./Context/Name";
 
 function ItemCards(prop) {
+let nameitem= useContext(NameContext);
     let proName= prop.name;
     let [parC, setPar] = useState("None");
     let prevdata= useContext(NameContext);
@@ -16,7 +17,7 @@ function ItemCards(prop) {
 
    if(proName=="None")
    {
-   let nameitem= useContext(NameContext);
+   
    if(nameitem.length>0){
    setPar(nameitem);
    }
