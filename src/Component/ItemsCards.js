@@ -15,7 +15,7 @@ let nameitem= useContext(NameContext);
         setPar(proName);
     }
 
-   if(proName=="None")
+   if(proName==="None")
    {
    
    if(nameitem.length>0){
