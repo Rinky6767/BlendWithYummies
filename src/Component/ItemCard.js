@@ -8,7 +8,7 @@ function ItemCard(prop){
     return(
     <ul className="wrapperitems">
     {
-       prop.list!===null?(prop.list.map((val)=>{
+       prop.list!==null?(prop.list.map((val)=>{
         return( <>
         <li className="itemcontainer" key={val.idMeal}>
           <h1 className="headingmain">{val.strMeal}</h1>
