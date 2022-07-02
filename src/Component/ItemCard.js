@@ -14,7 +14,7 @@ function ItemCard(prop){
           <button data-id={val.idMeal}className="ingbtn" ><Link style={{color:"white",textDecoration:"none"}} to={`/recipe/${val.idMeal}`}>Ingredient</Link></button>
           </li>
           </>) 
-      })):(<><h1 className='nodis'>Nothing to display<FaRegFrown/></h1></>)
+      })):(<><h1 className='nodis'>Nothing to display<FaRegFrown className='face' style={{ color: "blue" }} /></h1></>)
        
     }
     </ul>)
