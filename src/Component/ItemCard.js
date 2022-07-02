@@ -1,11 +1,7 @@
 import './item.css'
 import { Link } from 'react-router-dom';
-<<<<<<< HEAD
 import { FaRegFrown } from 'react-icons/fa';
 
-=======
-import PageNotFound from "./Error/PageNotFoound";
->>>>>>> 65e9552755bee773ebb8aefe56c5c14868cbd5c8
 function ItemCard(prop){
     return(
     <ul className="wrapperitems">

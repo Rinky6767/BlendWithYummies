@@ -11,6 +11,7 @@ function App() {
       <Route path="/" element={<Home/>} exact></Route>
        <Route path="/recipe/:id" element={<Recipe/>}></Route>
        <Route path="/dish/:name" element={<Dish/>}></Route>
+       <Route path='*' element={<>Invalid Request</>}></Route>
       </Routes>
     </div>
   );

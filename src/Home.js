@@ -12,7 +12,7 @@ function Home() {
   if(c==="None" && itemcat!==undefined && itemcat!=="None"){
     setC(itemcat);
   }
-  console.log("itemCat= "+itemcat+" c: "+c);
+  // console.log("itemCat= "+itemcat+" c: "+c);
     function isupdate(name){
       setC(name);
     }
