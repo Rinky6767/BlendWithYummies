@@ -55,7 +55,7 @@ function Dish() {
                         </div>
                     </div>)
                 })
-            }</>) : (error?(<PageNotFound/>):(<h1>Loding...⏳</h2>))
+            }</>) : ({error?(<PageNotFound/>):(<h1>Loding...⏳</h2>)})
         }
         <Footer/>
     </>)
