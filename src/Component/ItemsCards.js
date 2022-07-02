@@ -31,7 +31,7 @@ function ItemCards(prop) {
             parC === "None" ? (<><h1 className='nodis'>Nothing to Display<FaRegFrown className='face' style={{color:"blue"}}/></h1></>) : (<ItemCard/>)
         }
     </div>
-    </Namecontex.Provider>
+    </NameContext.Provider>
      )
 
 }
