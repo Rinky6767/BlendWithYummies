@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import {FaRegFrown} from 'react-icons/fa';
 import './itemcards.css';
 import ItemCard from './ItemCard';
-import {NameContext} from 'Context/Name.js';
+import {NameContext} from './Context/Name.js';
 
 function ItemCards(prop) {
     let proName= prop.name;
