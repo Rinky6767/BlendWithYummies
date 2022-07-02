@@ -13,12 +13,14 @@ function ItemCards(prop) {
     if (proName !== "None" && proName !== parC) {
         setPar(proName);
     }
-let nameitem= useContext(NameContext);
-   else if(proName== "None" && nameitem!==undefined)
-{
-   
+
+   if(proName=="None")
+   {
+   let nameitem= useContext(NameContext);
+   if(nameitem.length>0){
    setPar(nameitem);
-}
+   }
+ }
     useEffect(() => {
         if (proName !== "None") {
             let url= `https://www.themealdb.com/api/json/v1/1/filter.php?c=${parC}`;
