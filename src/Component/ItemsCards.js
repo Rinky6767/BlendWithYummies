@@ -13,6 +13,10 @@ function ItemCards(prop) {
     if (proName !== "None" && proName !== parC) {
         setPar(proName);
     }
+   else if(proName== "None" && Namecontext!==null)
+{
+   setPar(Namecontext);
+}
     useEffect(() => {
         if (proName !== "None") {
             let url= `https://www.themealdb.com/api/json/v1/1/filter.php?c=${parC}`;
@@ -27,10 +31,10 @@ function ItemCards(prop) {
     }, [parC]);
 
     return (
-      <NameContext.Provider value={data}>
+      <NameContext.Provider value={parC}>
       <div id="ItemCardsWrapper">
         {
-            parC === "None" ? (<><h1 className='nodis'>Nothing to Display<FaRegFrown className='face' style={{color:"blue"}}/></h1></>) : (<ItemCard/>)
+            parC === "None" ? (<><h1 className='nodis'>Nothing to Display<FaRegFrown className='face' style={{color:"blue"}}/></h1></>) : (<ItemCard list={data}/>)
         }
     </div>
     </NameContext.Provider>
