@@ -1,12 +1,14 @@
 import './item.css'
 import { Link } from 'react-router-dom';
 import PageNotFound from "./Error/PageNotFoound";
-
+import {NameContext} from 'Component/Context/Name.js';
+import {useContext} from "react";
 function ItemCard(prop){
+    let list= useContext(NameContext);
     return(
     <ul className="wrapperitems">
     {
-       prop.list!==null?( prop.list.map((val)=>{
+       list!==null?( prop.list.map((val)=>{
         return( <>
         <li className="itemcontainer" key={val.idMeal}>
           <h1 className="headingmain">{val.strMeal}</h1>
