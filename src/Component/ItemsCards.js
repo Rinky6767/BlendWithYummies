@@ -1,13 +1,15 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import {FaRegFrown} from 'react-icons/fa';
 import './itemcards.css';
 import ItemCard from './ItemCard';
-import {NameContext} from './Context/Name.js';
+import {NameContext} from "./Context/Name";
 
 function ItemCards(prop) {
     let proName= prop.name;
     let [parC, setPar] = useState("None");
-    let [data,setData]=useState([]);
+    let prevdata= useContext(NameContext);
+    if(prevdata!==null){prevdata=[]}
+    let [data,setData]=useState(prevdata);
     if (proName !== "None" && proName !== parC) {
         setPar(proName);
     }
