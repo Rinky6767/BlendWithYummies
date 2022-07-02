@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import {FaRegFrown} from 'react-icons/fa';
 import './itemcards.css';
 import ItemCard from './ItemCard';
+import {NameContext} from 'Component/Context/Name.js';
 
 function ItemCards(prop) {
     let proName= prop.name;
@@ -23,11 +24,15 @@ function ItemCards(prop) {
        // eslint-disable-next-line 
     }, [parC]);
 
-    return (<div id="ItemCardsWrapper">
+    return (
+      <div id="ItemCardsWrapper">
+      <NameContext.Provider value={data}>
         {
-            parC === "None" ? (<><h1 className='nodis'>Nothing to Display<FaRegFrown className='face' style={{color:"blue"}}/></h1></>) : (<ItemCard list={data}/>)
+            parC === "None" ? (<><h1 className='nodis'>Nothing to Display<FaRegFrown className='face' style={{color:"blue"}}/></h1></>) : (<ItemCard/>)
         }
-    </div>)
+    </Namecontex.Provider>
+    </div>
+    )
 
 }
 export default ItemCards;
