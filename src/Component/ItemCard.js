@@ -1,7 +1,7 @@
 import './item.css'
 import { Link } from 'react-router-dom';
 import PageNotFound from "./Error/PageNotFoound";
-import {NameContext} from 'Component/Context/Name.js';
+import {NameContext} from './Context/Name.js';
 import {useContext} from "react";
 function ItemCard(prop){
     let list= useContext(NameContext);
