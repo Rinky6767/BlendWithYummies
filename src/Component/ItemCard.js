@@ -4,11 +4,11 @@ import PageNotFound from "./Error/PageNotFoound";
 import {NameContext} from './Context/Name';
 import {useContext} from "react";
 function ItemCard(prop){
-    let list= useContext(NameContext);
+    //let list= useContext(NameContext);
     return(
     <ul className="wrapperitems">
     {
-       prop.list!==null?(prop.list.map((val)=>{
+       prop.list!===null?(prop.list.map((val)=>{
         return( <>
         <li className="itemcontainer" key={val.idMeal}>
           <h1 className="headingmain">{val.strMeal}</h1>
