@@ -11,6 +11,7 @@ import PageNotFound from './Component/Error/PageNotFoound';
 
 function Dish() {
     let [Dish, setDish] = useState([]);
+    let [error,setError]=useState(false);
     let { name } = useParams();
     let ingredient = [],ingredientfil, measuresfil;
     let measures = [];
@@ -21,7 +22,7 @@ function Dish() {
             return response.json();
         }).then((Dish) => {
             setDish(Dish.meals);
-        }).catch((error) => {  })
+        }).catch((error) => {  setError(true);})
         // eslint-disable-next-line 
     }, []);
     
@@ -54,7 +55,7 @@ function Dish() {
                         </div>
                     </div>)
                 })
-            }</>) : (<PageNotFound/>)
+            }</>) : (error?(<PageNotFound/>):(<h1>Loding...⏳</h2>))
         }
         <Footer/>
     </>)
