@@ -13,9 +13,11 @@ function ItemCards(prop) {
     if (proName !== "None" && proName !== parC) {
         setPar(proName);
     }
-   else if(proName== "None" && Namecontext!==null)
+let nameitem= useContext(NameContext);
+   else if(proName== "None" && nameitem!==undefined)
 {
-   setPar(Namecontext);
+   
+   setPar(nameitem);
 }
     useEffect(() => {
         if (proName !== "None") {
