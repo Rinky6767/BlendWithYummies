@@ -1,10 +1,8 @@
 import './item.css'
 import { Link } from 'react-router-dom';
-import PageNotFound from "./Error/PageNotFoound";
-//import {NameContext} from './Context/Name';
-//import {useContext} from "react";
+import { FaRegFrown } from 'react-icons/fa';
+
 function ItemCard(prop){
-    //let list= useContext(NameContext);
     return(
     <ul className="wrapperitems">
     {
@@ -16,7 +14,7 @@ function ItemCard(prop){
           <button data-id={val.idMeal}className="ingbtn" ><Link style={{color:"white",textDecoration:"none"}} to={`/recipe/${val.idMeal}`}>Ingredient</Link></button>
           </li>
           </>) 
-      })):(<PageNotFound/>)
+      })):(<><h1 className='nodis'>Nothing to Display<FaRegFrown className='face' style={{ color: "blue" }} /></h1></>)
        
     }
     </ul>)

@@ -6,7 +6,13 @@ import Footer from './Component/HeaderFooter/Footer';
 import {useState} from 'react';
 
 function Home() {
-    let [c, setC]= useState("None");
+  
+  let itemcat= sessionStorage.getItem("catname");
+  let [c, setC]= useState("None");
+  if(c==="None" && itemcat!==undefined && itemcat!=="None"){
+    setC(itemcat);
+  }
+  console.log("itemCat= "+itemcat+" c: "+c);
     function isupdate(name){
       setC(name);
     }
