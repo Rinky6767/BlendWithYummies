@@ -8,9 +8,11 @@ import {SiCoffeescript} from 'react-icons/si'
 import Footer from './Component/HeaderFooter/Footer';
 import Navbar from './Component/HeaderFooter/Navbar';
 import PageNotFound from './Component/Error/PageNotFoound';
+import Spinner from './Loading/Spinner';
 
 function Dish() {
     let [Dish, setDish] = useState([]);
+    // eslint-disable-next-line
     let [error,setError]=useState(false);
     let { name } = useParams();
     let ingredient = [],ingredientfil, measuresfil;
@@ -22,7 +24,7 @@ function Dish() {
             return response.json();
         }).then((Dish) => {
             setDish(Dish.meals);
-        }).catch((error) => {  setError(true);})
+        }).catch(() => {  setError(true);})
         // eslint-disable-next-line 
     }, []);
     
@@ -43,7 +45,7 @@ function Dish() {
     }
     return (<><Navbar/>
         {
-            Dish!==null ? (<>{
+            Dish!==null&&Dish.length>=1 ? (<>{
                 Dish.map((val) => {
                     return (<div className='recipeContainer'>
                         <h1 className='heading'><FaGrinHearts style={{color:"blue",marginRight:"12px"}}/>{val.strMeal}<FaGrinHearts style={{color:"red",marginLeft:"12px"}}/></h1>
@@ -55,7 +57,7 @@ function Dish() {
                         </div>
                     </div>)
                 })
-            }</>) : error?(<PageNotFound/>):(<h1>Loding...⏳</h1>)
+            }</>) : Dish==null?(<PageNotFound/>):(<Spinner/>)
         }
         <Footer/>
     </>)
