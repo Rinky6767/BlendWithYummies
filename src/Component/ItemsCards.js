@@ -25,7 +25,8 @@ function ItemCards(prop) {
 
     return (
             <div id="ItemCardsWrapper">
-                <h1 style={{textAlign:"center",display:"block"}}>{sessionStorage.getItem("catname")}</h1>
+                <h1 style={{textAlign:"center",display:"block"}}>
+                    {sessionStorage.getItem("catname")!=="None"?(<>{sessionStorage.getItem("catname")}</>):(<></>)}</h1>
                 {
                     parC === "None" ? (<><h1 className='nodis'>Nothing to Display<FaRegFrown className='face' style={{ color: "blue" }} /></h1></>) : (<ItemCard list={data} />)
                 }
