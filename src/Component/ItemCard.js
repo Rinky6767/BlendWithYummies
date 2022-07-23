@@ -4,7 +4,8 @@ import { FaRegFrown } from 'react-icons/fa';
 
 function ItemCard(prop){
     return(
-    <ul className="wrapperitems">
+      <div style={{display:"block",margin:"auto"}}>
+<ul className="wrapperitems" >
     {
        prop.list!==null?(prop.list.map((val)=>{
         return( <>
@@ -17,6 +18,11 @@ function ItemCard(prop){
       })):(<><h1 className='nodis'>Nothing to display<FaRegFrown className='face' style={{ color: "blue" }} /></h1></>)
        
     }
-    </ul>)
+    </ul>
+      </div>
+    
+    
+    )
+
 }
 export default ItemCard;
