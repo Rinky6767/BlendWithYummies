@@ -55,8 +55,8 @@ function Recipe() {
                             <ReactPlayer
                                url={val.strYoutube}
                                className="react-player"
-                                width="50%"
-                                height="300px"
+                               width="90%"
+                               height="300px"
                                 controls="true"
                                 style={{ marginBottom: "10px" }}
                             />
