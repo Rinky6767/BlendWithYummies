@@ -9,6 +9,8 @@ import Footer from './Component/HeaderFooter/Footer';
 import Navbar from './Component/HeaderFooter/Navbar';
 import PageNotFound from './Component/Error/PageNotFoound';
 import Spinner from './Loading/Spinner';
+import ReactPlayer from 'react-player/youtube';
+
 
 function Dish() {
     let [Dish, setDish] = useState([]);
@@ -55,6 +57,13 @@ function Dish() {
                             <p className='instruction'>{val.strInstructions}</p>
                             <Table ingredient={ingredientfil} measures={measuresfil} />
                         </div>
+                            <ReactPlayer
+                               url={val.strYoutube}
+                               className="react-player"
+                                width="100%"
+                                height="100%"
+                                controls={true}
+                            />
                     </div>)
                 })
             }</>) : Dish==null?(<PageNotFound/>):(<Spinner/>)

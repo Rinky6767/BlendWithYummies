@@ -5,7 +5,6 @@
     flex-direction: column;
     flex-wrap: wrap;
     background: url("/public/Images/bgh.jpg")no-repeat center center/cover;
-    
 }
 .heading{
     text-align: center;
@@ -31,7 +30,7 @@
     text-align: center;
     text-decoration: underline;
 }
-
+  
 @media only screen and (max-width: 500px){
     .instruction{
         text-align: left;
@@ -57,5 +56,6 @@
         text-align: center;
         font-size: 1.5rem;
     }
+    
 
 }
