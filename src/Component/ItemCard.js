@@ -4,7 +4,6 @@ import { FaRegFrown } from 'react-icons/fa';
 
 function ItemCard(prop){
     return(
-      <div style={{display:"block",margin:"auto"}}>
 <ul className="wrapperitems" >
     {
        prop.list!==null?(prop.list.map((val)=>{
@@ -19,9 +18,6 @@ function ItemCard(prop){
        
     }
     </ul>
-      </div>
-    
-    
     )
 
 }
