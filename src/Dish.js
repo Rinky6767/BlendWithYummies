@@ -62,7 +62,8 @@ function Dish() {
                                className="react-player"
                                width="90%"
                                height="300px"
-                                controls={true}
+                               controls={true}
+                               style={{marginBottom:"10px"}}
                             />
                     </div>)
                 })
