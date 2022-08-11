@@ -7,3 +7,8 @@
     align-items: center;
     box-shadow: 1px 1px 12px gray;
 }
+@media only screen and (max-width:259px) {
+    .info{
+        font-size: 0.7rem;
+    } 
+}
