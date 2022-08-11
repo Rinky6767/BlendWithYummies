@@ -1,7 +1,7 @@
 import './main.css';
 import { FaSearch } from 'react-icons/fa';
 import { Fragment, useEffect, useState } from 'react';
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import DropdownCategory from './DropdownCategory'
 
 function Main(prop) {
@@ -30,10 +30,11 @@ function Main(prop) {
             <fieldset>
                 <legend id="display">Yummies are Ready</legend>
                 <input type="text" placeholder='Enter your dish Name' id="dish" value={dishName} onChange={ChangeHandler} />
-                <button  id="searchbtn" onClick={(event)=>{event.preventDefault();
-                  if(dishName.length>0){
-                    navigate(`/dish/${dishName}`);
-                  }
+                <button id="searchbtn" onClick={(event) => {
+                    event.preventDefault();
+                    if (dishName.length > 0) {
+                        navigate(`/dish/${dishName}`);
+                    }
                 }}><FaSearch className='search' />Search</button>
             </fieldset>
             <DropdownCategory cat={Category} fun={isupdate} />

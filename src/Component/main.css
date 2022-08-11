@@ -1,32 +1,36 @@
-
-#maincontainer{
+#maincontainer {
     position: relative;
     overflow: hidden;
 }
-fieldset{
-   text-align: center;
+
+fieldset {
+    text-align: center;
     margin-top: 50px;
     border-radius: 12px;
 }
-#display{
+
+#display {
     font-size: 2.0rem;
     font-family: 'Baloo Bhaina 2', cursive;
     font-weight: bold;
 }
-#dish{
+
+#dish {
     border-radius: 12px;
     margin-top: 15px;
-    width:50%;
+    width: 50%;
     height: 50px;
     text-align: center;
     font-size: 2.0rem;
 }
-.search{
+
+.search {
     margin-right: "12px";
     font-size: 32px;
     border-radius: 10px;
 }
-#searchbtn{
+
+#searchbtn {
     cursor: pointer;
     height: 50px;
     width: 150px;
@@ -37,29 +41,31 @@ fieldset{
     color: white;
     border-color: rgb(117, 117, 191);
 }
-#maincontainer{
+
+#maincontainer {
     background-color: ghostwhite;
 }
 
 /* media for screen : 700px max */
-@media only screen and (max-width:700px){
-    #dish{
+@media only screen and (max-width:700px) {
+    #dish {
         border-radius: 10px;
         margin-top: 15px;
-        width:30%;
+        width: 30%;
         height: 40px;
         text-align: center;
         font-size: 1.5rem;
     }
-    .search{
+
+    .search {
         margin-right: "12px";
         font-size: 18px;
         border-radius: 10px;
     }
 }
 
-@media only screen and (max-width: 500px){
-    #dish{
+@media only screen and (max-width: 500px) {
+    #dish {
         border-radius: 12px;
         margin-top: 15px;
         width: 45%;
@@ -67,7 +73,8 @@ fieldset{
         text-align: center;
         font-size: 0.7rem;
     }
-    #searchbtn{
+
+    #searchbtn {
         cursor: pointer;
         height: 40px;
         width: 100px;
@@ -78,19 +85,22 @@ fieldset{
         color: white;
         border-color: rgb(117, 117, 191);
     }
-    #display{
+
+    #display {
         font-size: 1.5rem;
         font-family: 'Baloo Bhaina 2', cursive;
         font-weight: bold;
     }
-    .search{
+
+    .search {
         margin-right: "12px";
         font-size: 12px;
         border-radius: 7px;
     }
 }
-@media only screen and (max-width:350px){
-    #dish{
+
+@media only screen and (max-width:350px) {
+    #dish {
         border-radius: 12px;
         margin-top: 15px;
         width: 40%;
@@ -98,7 +108,8 @@ fieldset{
         text-align: center;
         font-size: 0.5rem;
     }
-    #searchbtn{
+
+    #searchbtn {
         cursor: pointer;
         height: 30px;
         width: 90px;
@@ -109,12 +120,14 @@ fieldset{
         color: white;
         border-color: rgb(117, 117, 191);
     }
-    #display{
+
+    #display {
         font-size: 1.2rem;
         font-family: 'Baloo Bhaina 2', cursive;
         font-weight: bold;
     }
-    .search{
+
+    .search {
         margin-right: "10px";
         font-size: 9px;
         border-radius: 5px;

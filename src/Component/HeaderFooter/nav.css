@@ -1,67 +1,78 @@
-.navWrapper{
-    border:2px solid gainsboro;
+.navWrapper {
+    border: 2px solid gainsboro;
     box-shadow: 1px 1px 12px gray;
 }
-.navname{
-font-size: 2.5rem;
-margin-left: 32px;
-font-family:Georgia, 'Times New Roman', Times, serif;
-font-style: italic;
-}
-.logo2{
-   font-size:"50px";
-   color:"red";
-}
-.logo1{
-    font-size:"50px";
-   color:"blue";
-}
-@media only screen and (max-width: 700px){
-    .navname{
-        font-size: 1.4rem;
-        margin-left: 32px;
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        font-style: italic;
-        }
-        .logo1{
-            font-size:"40px";
-            color:"blue";
-        }
-        .logo2{
-            font-size:"40px";
-            color:"red";
-         }
-}
-@media only screen and (max-width: 500px){
-    .navname{
-        font-size: 1.5rem;
-        margin-left: 12px;
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        font-style: italic;
-        }
-        .logo1{
-            font-size:"40px";
-            color:"blue";
-        }
-        .logo2{
-            font-size:"40px";
-            color:"red";
-         }
+
+.navname {
+    font-size: 2.5rem;
+    margin-left: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
 }
 
-@media only screen and (max-width: 350px){
-    .navname{
+.logo2 {
+    font-size: "50px";
+    color: "red";
+}
+
+.logo1 {
+    font-size: "50px";
+    color: "blue";
+}
+
+@media only screen and (max-width: 700px) {
+    .navname {
+        font-size: 1.4rem;
+        margin-left: 32px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+    }
+
+    .logo1 {
+        font-size: "40px";
+        color: "blue";
+    }
+
+    .logo2 {
+        font-size: "40px";
+        color: "red";
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .navname {
+        font-size: 1.5rem;
+        margin-left: 12px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+    }
+
+    .logo1 {
+        font-size: "40px";
+        color: "blue";
+    }
+
+    .logo2 {
+        font-size: "40px";
+        color: "red";
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .navname {
         font-size: 1.2rem;
         margin-left: 12px;
-        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-family: Georgia, 'Times New Roman', Times, serif;
         font-style: italic;
-        }
-        .logo1{
-            font-size:"30px";
-            color:"blue";
-        }
-        .logo2{
-            font-size:"30px";
-            color:"red";
-         }
+    }
+
+    .logo1 {
+        font-size: "30px";
+        color: "blue";
+    }
+
+    .logo2 {
+        font-size: "30px";
+        color: "red";
+    }
 }

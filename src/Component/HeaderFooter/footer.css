@@ -1,4 +1,4 @@
-.footWrapper{
+.footWrapper {
     padding: 0%;
     border: 2px solid gainsboro;
     border-radius: 5px;
@@ -7,8 +7,9 @@
     align-items: center;
     box-shadow: 1px 1px 12px gray;
 }
+
 @media only screen and (max-width:259px) {
-    .info{
+    .info {
         font-size: 0.7rem;
-    } 
+    }
 }

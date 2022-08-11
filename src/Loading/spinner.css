@@ -1,24 +1,28 @@
 @keyframes spinner {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    50%{
+
+    50% {
         transform: rotate(50deg);
     }
-    100%{
+
+    100% {
         transform: rotate(100deg);
     }
 }
-#loadwrapper{
-    display:  flex;
+
+#loadwrapper {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 80vh;
     width: 100vw;
 }
-#loadspin{
-    width:60px;
+
+#loadspin {
+    width: 60px;
     height: 60px;
     background-color: red;
     animation: spinner 1s infinite;
