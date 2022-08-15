@@ -8,8 +8,8 @@
     box-shadow: 1px 1px 12px gray;
 }
 
-@media only screen and (max-width:259px) {
+@media only screen and (max-width:300px) {
     .info {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
 }
