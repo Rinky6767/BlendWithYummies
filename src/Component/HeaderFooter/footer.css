@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: 1px 1px 12px gray;
+    background-color: whitesmoke;
 }
 
 @media only screen and (max-width:300px) {

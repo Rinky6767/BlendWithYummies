@@ -3,7 +3,6 @@ import {Route, Routes}from 'react-router-dom'
 import Home from './Home'
 import Recipe from './Component/Recipe';
 import Dish from './Dish';
-
 function App() {
   return (
     <div className="App">

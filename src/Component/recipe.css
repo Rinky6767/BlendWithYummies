@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    background: url("/public/Images/bgh.jpg")no-repeat center center/cover;
+    background: url("/public/Images/Bck.jpg")no-repeat center center/cover;
 }
 .heading{
     text-align: center;
